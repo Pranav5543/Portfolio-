@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8a7945de71.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <nav>
+            <img src="logo.png.jpg" alt="Logo" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#portfolio">Certificates</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <h1 >Hello, It's me<br>I'm <span>Full Stack Developer</span></h1>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="right_side.png.jpeg" alt="About Me">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hello Everyone, Myself Pranav. This is my official website to showcase my experiences and skills. I'm a Full Stack Developer from Hyderabad, skilled and very passionate in creating visually appealing and user-friendly websites.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>HTML, CSS, Bootstrap, Flexbox, JavaScript</li>
+                            <li><span>Programming Languages</span><br>Python, Data Structure</li>
+                            <li><span>Database</span><br>MYSQL, MongoDB</li>
+                            <li><span>Developer Tools</span><br>Git, GitHub,</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Project</span><br>Build & Developed NxtWatch App <br> Built & Developed Food Munch Application on Amazon Web Services </li>
+
+                            <li><span>Internship</span><br>Web Development Intern at CodSoft</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>School</span><br>Sahasraa High School</li>
+                            <li><span>Intermediate</span><br>Master Minds Junior College</li>
+                            <li><span>B.Tech</span><br>St. Peter's Engineering College</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="skills">
+        <div class="container">
+            <h1 class="sub-title">Skills</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Technical Skills</h2>
+                    <p>Programming Languages : Python, Data Structures</p>
+                    <p>Web Development : HTML, CSS, JavaScript</p>
+                    <p>Database Management : SQL, MySQL </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Professional Skills</h2>
+                    <p>Communication skills, Problem-Solving, Logical Thinking, Adaptability, Collaboration, Time Management, Teamwork,</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>Projects</h2>
+                    <p>Built & Developed Food Munch Application on Amazon Web Services </p>
+                    <P>Developed NXTWATCH – A YouTube Alternative </P>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Certificates</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="PC.png" alt="Artificial Intelligence Certificate">
+                    <div class="layer">
+                        <h3>Python Certificate</h3>
+                        <p>Secured a Python Certificate from NxtWave</p>
+                        <a href="https://certificates.ccbp.in/academy/programming-foundations-with-python?id=PCMUZTVZBP"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="CodSoft.png" alt="Android Developer Certificate">
+                    <div class="layer">
+                        <h3>Web Developer</h3>
+                        <p>Successfully completed Web developer Intern at CodSoft</p>
+                        <a href="https://drive.google.com/file/d/1KaF5zzbWecqC4IwWuuNpCR1iFbPylOxm/view"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Google.png" alt="Google Cloud Computing Foundations Certificate">
+                    <div class="layer">
+                        <h3>GOOGLE: Google Cloud Computing Foundations</h3>
+                        <p>I have successfully completed the Google Cloud Computing Foundations course on Google Cloud Platform.</p>
+                        <a href="https://www.credly.com/badges/e728bef6-2aef-4d18-a384-4a7759cf1ff1/public_url"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>nuthipranav@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>7842670755</p>
+                    <div class="social-icons">                        
+                        <a href="https://github.com/Pranav5543"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/pranav235"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="Pranav_Resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Names" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <p>Copyright © Pranav. Made with <i class="fa-solid fa-heart"></i> by Easy Tutorials</p>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (var tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (var tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxEotLp_GnfCD155kVgoxcJYHQBzddLNYz7x8zaREvizIXSS2vruzMWylq8utYEq2I1/exec';
+        const form = document.forms['submit-to-google-sheet'];
+        const msg = document.getElementById("msg");
+
+        form.addEventListener('submit', e => {
+            e.preventDefault();
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully";
+                    setTimeout(function() {
+                        msg.innerHTML = "";
+                    }, 5000);
+                    form.reset();
+                })
+                .catch(error => console.error('Error!', error.message));
+        });
+    </script>
+</body>
+</html>
